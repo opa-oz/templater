@@ -1,0 +1,4 @@
+{
+    "path": "${DEFAULT_PATH}/my_table",
+    "my_var": "${VAR_FROM_TEMPLATE}"
+}
