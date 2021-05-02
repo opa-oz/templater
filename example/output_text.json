@@ -1,4 +1,5 @@
 {
     "path": "/usr/opt/web/my_table",
-    "my_var": "Hello, C++ world!"
+    "my_var": "Hello, C++ world!",
+    "alt_path": "/usr/opt/web/alt_table"
 }

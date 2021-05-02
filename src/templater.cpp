@@ -58,7 +58,12 @@ int main(int argc, char **argv) {
     string result = buffer.str();
 
     for (auto &element : json_input.items()) {
-        replace(result, "${" + element.key() + "}", element.value());
+        string key = "${" + element.key() + "}";
+        bool success = replace(result, key, element.value());
+
+        while (success) {
+            success = replace(result, key, element.value());
+        }
     }
 
     ofstream output;
